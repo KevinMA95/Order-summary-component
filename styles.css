@@ -1,0 +1,148 @@
+:root{
+    --btn-clr-pale: hsl(225, 100%, 94%);
+    --btn-clr-bright: hsl(245, 75%, 52%);
+
+    --txt-clr-very-pale: hsl(225, 100%, 98%);
+    --txt-clr-desaturated: hsl(224, 23%, 55%);
+    --txt-clr-dark: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--btn-clr-pale);
+    text-align: center;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 355px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img-container-hero{
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    height: 180px;
+    background-image: url(images/illustration-hero.svg);
+    background-position: 50% 50%;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+.info-container{
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+    padding: 3vh;
+    color: var(--txt-clr-desaturated);
+    
+}
+
+.plan-details-container {
+    line-height: 130%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cne-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.5vh;
+}
+
+.dark{
+    color: var(--txt-clr-dark);
+}
+
+span{
+    font-weight: 900;
+}
+
+p{
+    line-height: 180%;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+}
+
+img {
+    max-width: 375px;
+    border-radius: 20px 20px 0 0;
+}
+
+.btn-pcd {
+    border: none;
+    padding: 15px 80px 15px 80px;
+    background-color: var(--btn-clr-bright);
+    border-radius: 8px;
+    color: var(--txt-clr-very-pale);
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-cnl{
+    border: none;
+    color: var(--txt-clr-desaturated);
+    background-color: #ffffff;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--txt-clr-desaturated);
+}
+
+.btn-pcd:hover {
+    background-color: var(--txt-clr-desaturated);
+    cursor: pointer;
+}
+
+.btn-cnl:hover{
+    color: var(--txt-clr-dark);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 470px) {
+        body {
+            background-image: url(images/pattern-background-desktop.svg);
+            background-position: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            max-width: 380px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img-container-hero {
+            width: 380px;
+            height: 190px;
+            background-position: center;
+
+        }
+
+        p{
+            padding: 15px 30px 15px 30px;
+        }
+}
+
+
